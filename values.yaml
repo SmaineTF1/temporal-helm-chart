@@ -21,7 +21,7 @@ server:
   sidecarContainers: {}
   image:
     repository: temporalio/server
-    tag: 1.21.0
+    tag: 1.20.3
     pullPolicy: IfNotPresent
 
   # Global default settings (can be overridden per service)
@@ -173,7 +173,7 @@ server:
       port: 7233
     metrics:
       annotations:
-        enabled: false
+        enabled: true
       serviceMonitor: {}
       # enabled: false
       prometheus: {}
@@ -197,7 +197,7 @@ server:
       port: 7234
     metrics:
       annotations:
-        enabled: false
+        enabled: true
       serviceMonitor: {}
       # enabled: false
       prometheus: {}
@@ -245,7 +245,7 @@ server:
       port: 7239
     metrics:
       annotations:
-        enabled: false
+        enabled: true
       serviceMonitor: {}
       # enabled: false
       prometheus: {}
@@ -267,7 +267,7 @@ admintools:
   enabled: true
   image:
     repository: temporalio/admin-tools
-    tag: 1.21.0
+    tag: 1.20.3
     pullPolicy: IfNotPresent
 
   service:
